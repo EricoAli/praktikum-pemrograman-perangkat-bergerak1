@@ -1,26 +1,24 @@
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    buildFeatures {
-        viewBinding = true
-    }
-
-    namespace = "com.example.myapplication"
+    namespace = "com.example.helloapp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.helloapp"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
 
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -39,9 +37,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
-
-
 }
 
 dependencies {
