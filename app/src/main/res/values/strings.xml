@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Access</string>
+    <string name="register_title">Register</string>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Phone</string>
+    <string name="password_hint">Password</string>
+    <string name="terms_and_conditions">By checking the box you agree to our terms and conditions</string>
+    <string name="register_button">Register</string>
+    <string name="already_have_account">Already Have an Account? Log In</string>
+    <string name="login_title">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_button">Login</string>
+    <string name="new_member_register">New Member? Register</string>
+    <string name="homepage_title">Homepage</string>
+    <string name="welcome_message">Welcome %1$s</string>
+    <string name="email_status_message">Your %1$s has been activated</string>
+    <string name="phone_status_message">Your %1$s has been registered</string>
+</resources>
