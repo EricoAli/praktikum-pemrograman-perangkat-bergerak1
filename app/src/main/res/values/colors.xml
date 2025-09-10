@@ -2,7 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
     <color name="light_gray">#F0F0F0</color>
     <color name="custom_blue">#4F46E5</color>
     <color name="text_link_blue">#3B82F6</color>
+=======
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
 </resources>

@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.MyAccess" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.IntentApp" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.MyAccess" parent="Base.Theme.MyAccess" />
+=======
+    <style name="Theme.IntentApp" parent="Base.Theme.IntentApp" />
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
 </resources>

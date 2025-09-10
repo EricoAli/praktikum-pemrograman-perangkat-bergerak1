@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">My Access</string>
     <string name="register_title">Register</string>
     <string name="username_hint">Username</string>
@@ -17,4 +18,7 @@
     <string name="welcome_message">Welcome %1$s</string>
     <string name="email_status_message">Your %1$s has been activated</string>
     <string name="phone_status_message">Your %1$s has been registered</string>
+=======
+    <string name="app_name">Intent App</string>
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
 </resources>

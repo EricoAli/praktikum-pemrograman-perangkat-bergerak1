@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.myaccess"
     compileSdk = 36
 
@@ -13,6 +14,13 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myaccess"
+=======
+    namespace = "com.example.intentapp"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.intentapp"
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -21,6 +29,13 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+<<<<<<< HEAD
+=======
+    buildFeatures{
+        viewBinding = true
+    }
+
+>>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
     buildTypes {
         release {
             isMinifyEnabled = false
