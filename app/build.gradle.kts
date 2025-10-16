@@ -4,23 +4,11 @@ plugins {
 }
 
 android {
-<<<<<<< HEAD
-    namespace = "com.example.myaccess"
-    compileSdk = 36
-
-    buildFeatures {
-        viewBinding = true
-    }
-
-    defaultConfig {
-        applicationId = "com.example.myaccess"
-=======
-    namespace = "com.example.intentapp"
+    namespace = "com.example.myaccess" // <-- Pastikan ini nama paket yang benar
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.intentapp"
->>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
+        applicationId = "com.example.myaccess" // <-- Pastikan ini nama paket yang benar
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -29,13 +17,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-<<<<<<< HEAD
-=======
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 
->>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -55,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

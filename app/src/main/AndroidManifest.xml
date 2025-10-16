@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myaccess">
-=======
-    xmlns:tools="http://schemas.android.com/tools">
->>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
 
     <application
         android:allowBackup="true"
@@ -15,7 +11,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/Theme.MyAccess"
         tools:targetApi="31">
 
@@ -36,24 +31,5 @@
             android:exported="false" />
 
     </application>
-=======
-        android:theme="@style/Theme.IntentApp">
-        <activity
-            android:name=".ThirdActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
->>>>>>> a8bdd26d7e85ea75dcace0b0bde7f870a6a79aa1
 </manifest>
