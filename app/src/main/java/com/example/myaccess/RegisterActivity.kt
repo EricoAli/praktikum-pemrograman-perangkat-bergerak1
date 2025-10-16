@@ -26,7 +26,7 @@ class RegisterActivity : AppCompatActivity() {
             // 1. Cek dulu apakah ada kolom yang kosong
             if (username.isBlank() || email.isBlank() || phone.isBlank() || password.isBlank()) {
                 Toast.makeText(this, "Semua kolom harus diisi!", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // Hentikan proses jika ada yang kosong
+                return@setOnClickListener // Hentikan proses klo ada yang kosong
             }
 
             // 2. Jika semua terisi, cek format email
@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener // Hentikan proses jika email tidak valid
             }
 
-            // 3. Jika semua validasi lolos, lanjutkan proses registrasi
+            // 3. lanjutkan proses registrasi jk lolos validasi
             Toast.makeText(this, "Registrasi berhasil!", Toast.LENGTH_SHORT).show()
             val resultIntent = Intent()
             resultIntent.putExtra(EXTRA_USERNAME, username)
@@ -45,14 +45,13 @@ class RegisterActivity : AppCompatActivity() {
 
             setResult(Activity.RESULT_OK, resultIntent)
             finish()
-        } // Penutup untuk setOnClickListener
-    } // Penutup untuk onCreate
+        }
+    }
 
-    // companion object harus berada di dalam class, tapi di luar method
     companion object {
         const val EXTRA_USERNAME = "extra_username"
         const val EXTRA_EMAIL = "extra_email"
         const val EXTRA_PHONE = "extra_phone"
         const val EXTRA_PASSWORD = "extra_password"
     }
-} // Penutup untuk class RegisterActivity
+}

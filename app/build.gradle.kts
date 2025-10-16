@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myaccess" // <-- Pastikan ini nama paket yang benar
+    namespace = "com.example.myaccess" // udh bner
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.myaccess" // <-- Pastikan ini nama paket yang benar
+        applicationId = "com.example.myaccess" // udh bnr
         minSdk = 24
         targetSdk = 36
         versionCode = 1

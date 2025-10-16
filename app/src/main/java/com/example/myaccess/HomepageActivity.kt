@@ -26,35 +26,33 @@ class HomepageActivity : AppCompatActivity() {
 
         // --- Logika SpannableString ---
 
-        // 1. Membuat teks "Welcome Username"
+        // "Welcome Username"
         val welcomeText = getString(R.string.welcome_message, name)
         val welcomeSpannable = SpannableString(welcomeText)
         applyColorAndBoldSpan(welcomeSpannable, name)
         binding.txtWelcomeMessage.text = welcomeSpannable
 
-        // 2. Membuat teks "Your email..."
+        // "Your email..."
         val emailText = getString(R.string.email_status_message, email)
         val emailSpannable = SpannableString(emailText)
         applyColorAndBoldSpan(emailSpannable, email)
         binding.txtEmailStatus.text = emailSpannable
 
-        // 3. Membuat teks "Your phone..."
+        //"Your phone..."
         val phoneText = getString(R.string.phone_status_message, phone)
         val phoneSpannable = SpannableString(phoneText)
         applyColorAndBoldSpan(phoneSpannable, phone)
         binding.txtPhoneStatus.text = phoneSpannable
     }
 
-    /**
-     * Fungsi bantuan untuk menerapkan warna dan gaya tebal pada bagian teks.
-     */
+
     private fun applyColorAndBoldSpan(spannable: SpannableString, target: String) {
         val startIndex = spannable.toString().indexOf(target)
         if (startIndex == -1) return // Jika target tidak ditemukan, jangan lakukan apa-apa
 
         val endIndex = startIndex + target.length
 
-        // Terapkan warna
+        //  warna
         val color = ContextCompat.getColor(this, R.color.custom_blue)
         spannable.setSpan(
             ForegroundColorSpan(color),
@@ -63,7 +61,7 @@ class HomepageActivity : AppCompatActivity() {
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
-        // Terapkan gaya tebal (bold)
+        // bold teks
         spannable.setSpan(
             StyleSpan(Typeface.BOLD),
             startIndex,
