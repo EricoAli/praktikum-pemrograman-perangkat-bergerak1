@@ -45,22 +45,22 @@ class MainActivity : ComponentActivity() {
 }
 
 // ----------------------------------------------------
-// FUNGSI COMPOSABLE UTAMA (INI GABUNGANNYA)
+// FUNGSI COMPOSABLE UTAMA
 // ----------------------------------------------------
 @Composable
 fun HelloToastScreen() {
-    // 1. Tambahkan state dan context [cite: 118, 119]
+    // 1. Tambahkan state dan context
     val ctx = LocalContext.current
     var count by rememberSaveable { mutableStateOf(0) }
 
-    // 2. Buat layout Column [cite: 81-86]
+    // 2. Buat layout Column
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // 3. Tombol TOAST (dengan logic onClick yang benar) [cite: 123-128]
+        // 3. Tombol TOAST (dengan logic onClick yang benar)
         Button(
             onClick = {
                 Toast.makeText(ctx, "Count $count", Toast.LENGTH_SHORT).show()
@@ -70,7 +70,7 @@ fun HelloToastScreen() {
             Text(text = stringResource(id = R.string.toast))
         }
 
-        // 4. Box Angka (menggunakan state 'count') [cite: 93-108]
+        // 4. Box Angka (menggunakan state 'count')
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -86,7 +86,7 @@ fun HelloToastScreen() {
             )
         }
 
-        // 5. Tombol COUNT (dengan logic onClick yang benar) [cite: 130-135]
+        // 5. Tombol COUNT (dengan logic onClick yang benar)
         Button(
             onClick = {
                 count++ // Menambah nilai state
@@ -146,7 +146,7 @@ fun HelloToastScreenRowButtons() {
 }
 
 // ----------------------------------------------------
-// FUNGSI PREVIEW [cite: 138-142]
+// FUNGSI PREVIEW
 // ----------------------------------------------------
 @Preview(showBackground = true)
 @Composable
